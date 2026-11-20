@@ -4,8 +4,8 @@
   "description": "This is your learning node project",
   "main": "index.ts",
   "scripts": {
-    "start:server": "node --experimental-strip-types src/index.ts",
-    "start:web-app": "tsx src/app.ts",
+    "start:test-server": "node --experimental-strip-types src/index.ts",
+    "start:backend": "tsx src/app.ts",
     "type-check": "tsc --noEmit"
   },
   "keywords": [],
