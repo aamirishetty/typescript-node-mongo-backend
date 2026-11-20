@@ -48,8 +48,9 @@ app.get('/',(req: Request, res: Response): void => {
 });
 
 /**
- * NEW ENDPOINT: GET /api/employees
- * Fetches all records from employeeCollection with optional department query filter
+ * FETCH-EMPLOYEES-ENDPOINT
+ * GET /api/employees
+ * Fetches all records from employeeCollection with optional department query filter.
  */
 app.get('/api/employees', async (req: Request, res: Response): Promise<void>=>{
   try{
@@ -65,6 +66,11 @@ app.get('/api/employees', async (req: Request, res: Response): Promise<void>=>{
   }
 });
 
+/**
+ * ADD-EMPLOYEE-ENDPOINT
+ * POST /api/add-employee
+ * Adds a new employee to the 'employeeCollection' in the learningDB.
+ */
 app.post('/api/add-employee', async(req: Request, res: Response): Promise<void>=>{
   try{
     // adding a new employee
